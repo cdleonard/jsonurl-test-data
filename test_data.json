@@ -1,0 +1,10 @@
+[
+    {
+        "text": "true",
+        "data": true
+    },
+    {
+        "type": "fail",
+        "text": "a,b"
+    }
+]
