@@ -298,6 +298,18 @@
       "e": ""
     }
   },
+  "aqf-percent-encode-structural": {
+    "type": "load",
+    "aqf": true,
+    "text": "%28a%2cb%29",
+    "data": ["a", "b"]
+  },
+  "aqf-roundtrip-structural": {
+    "aqf": true,
+    "implied_array": true,
+    "text": "!!,+,!(,!),!,,!:",
+    "data": ["!", " ", "(", ")", ",", ":"]
+  },
   "non-implied-array": {
     "type": "fail",
     "text": "a,b"
