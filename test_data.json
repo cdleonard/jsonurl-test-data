@@ -44,8 +44,62 @@
     "type": "load",
     "text": "(quote:a%27b)",
     "data": {
-        "quote": "a'b"
+      "quote": "a'b"
     }
+  },
+  "implied-array": {
+    "implied_array": true,
+    "text": "1,2",
+    "data": [1, 2]
+  },
+  "implied-array-single-element": {
+    "implied_array": true,
+    "text": "a",
+    "data": ["a"]
+  },
+  "implied-array-empty": {
+    "implied_array": true,
+    "text": "",
+    "data": []
+  },
+  "implied-object": {
+    "implied_object": true,
+    "text": "a:b,c:1",
+    "data": {
+      "a": "b",
+      "c": 1
+    }
+  },
+  "implied-object-single-element": {
+    "implied_object": true,
+    "text": "a:b",
+    "data": {
+      "a": "b"
+    }
+  },
+  "implied-object-empty": {
+    "implied_object": true,
+    "text": "",
+    "data": {}
+  },
+  "implied-array-aqf": {
+    "implied_array": true,
+    "aqf": true,
+    "text": "null,!null,false,!false,true,!true,1,!1,1.2,!1.2,!e,ee",
+    "data": [
+      null,
+      "null",
+      false,
+      "false",
+      true,
+      "true",
+      1,
+      "1",
+      1.2,
+      "1.2",
+      "",
+      "ee"
+    ]
   },
   "non-implied-array": {
     "type": "fail",

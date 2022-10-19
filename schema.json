@@ -8,6 +8,17 @@
   },
   "additionalProperties": {
     "type": "object",
+    "properties": {
+      "aqf": {
+        "type": "boolean"
+      },
+      "implied_array": {
+        "type": "boolean"
+      },
+      "implied_object": {
+        "type": "boolean"
+      }
+    },
     "anyOf": [
       {
         "$comment": "exact match between text and data on both load and save",
@@ -20,7 +31,6 @@
           },
           "data": {}
         },
-        "additionalProperties": false,
         "required": ["text", "data"]
       },
       {
@@ -33,7 +43,6 @@
             "type": "string"
           }
         },
-        "additionalProperties": false,
         "required": ["type", "text", "data"]
       },
       {
@@ -46,7 +55,6 @@
             "type": "string"
           }
         },
-        "additionalProperties": false,
         "required": ["type", "text"]
       }
     ]
