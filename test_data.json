@@ -351,6 +351,36 @@
     "type": "fail",
     "text": "a&b"
   },
+  "aqf-percent-true": {
+    "type": "load",
+    "aqf": true,
+    "text": "%74rue",
+    "data": "true"
+  },
+  "aqf-empty-qq": {
+    "type": "load",
+    "aqf": true,
+    "text": "%21%65",
+    "data": ""
+  },
+  "aqf-empty-rq": {
+    "type": "load",
+    "aqf": true,
+    "text": "!%65",
+    "data": ""
+  },
+  "aqf-empty-qr": {
+    "type": "load",
+    "aqf": true,
+    "text": "%21e",
+    "data": ""
+  },
+  "aqf-empty-rr": {
+    "type": "load",
+    "aqf": true,
+    "text": "!e",
+    "data": ""
+  },
   "non-implied-array": {
     "type": "fail",
     "text": "a,b"
