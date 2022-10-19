@@ -242,6 +242,17 @@
       "parens": ")("
     }
   },
+  "aqf-escape-structural": {
+    "type": "load",
+    "aqf": true,
+    "text": "(!(,!),!!,!:,!,)",
+    "data": ["(", ")", "!", ":", ","]
+  },
+  "aqf-fail-escape-semicolon": {
+    "type": "fail",
+    "aqf": true,
+    "text": "!;"
+  },
   "non-implied-array": {
     "type": "fail",
     "text": "a,b"
