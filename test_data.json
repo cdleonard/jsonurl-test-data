@@ -101,6 +101,57 @@
       "ee"
     ]
   },
+  "quote-plus": {
+    "type": "load",
+    "text": "('a+b',c+d)",
+    "data": ["a b", "c d"]
+  },
+  "quote-precent": {
+    "type": "load",
+    "text": "'a%27b'",
+    "data": "a'b"
+  },
+  "quote-structural": {
+    "type": "load",
+    "text": "('(',')',':',',')",
+    "data": [ "(", ")", ":", "," ]
+  },
+  "fail-quote-percent-noval": {
+    "type": "fail",
+    "text": "b%"
+  },
+  "fail-quote-percent-oneval": {
+    "type": "fail",
+    "text": "a%1"
+  },
+  "fail-quote-percent-badhex": {
+    "type": "fail",
+    "text": "b%1z"
+  },
+  "fail-quote-aqf-trailing-escape": {
+    "type": "fail",
+    "aqf": true,
+    "text": "hi!"
+  },
+  "fail-quote-aqf-bad-escape": {
+    "type": "fail",
+    "aqf": true,
+    "text": "hi!x"
+  },
+  "fail-quote-aqf-e-escape": {
+    "type": "fail",
+    "aqf": true,
+    "text": "hi!e"
+  },
+  "percent-decode": {
+    "type": "load",
+    "text": "(color:a%3Ab,equal:%3d,parens:%29%28)",
+    "data": {
+      "color": "a:b",
+      "equal": "=",
+      "parens": ")("
+    }
+  },
   "non-implied-array": {
     "type": "fail",
     "text": "a,b"
