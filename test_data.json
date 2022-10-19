@@ -114,7 +114,7 @@
   "quote-structural": {
     "type": "load",
     "text": "('(',')',':',',')",
-    "data": [ "(", ")", ":", "," ]
+    "data": ["(", ")", ":", ","]
   },
   "fail-quote-percent-noval": {
     "type": "fail",
@@ -252,6 +252,37 @@
     "type": "fail",
     "aqf": true,
     "text": "!;"
+  },
+  "aqf-plus-plain": {
+    "type": "load",
+    "aqf": true,
+    "text": "a+b",
+    "data": "a b"
+  },
+  "aqf-plus-percent": {
+    "type": "load",
+    "aqf": true,
+    "text": "a%2bb",
+    "data": "a+b"
+  },
+  "aqf-plus-bang-percent": {
+    "type": "load",
+    "aqf": true,
+    "text": "a!%2bb",
+    "data": "a+b"
+  },
+  "aqf-plus-bang-fail": {
+    "type": "fail",
+    "aqf": true,
+    "text": "a!+b",
+    "data": "a+b"
+  },
+  "aqf-escape-percent-many": {
+    "type": "load",
+    "aqf": true,
+    "implied_array": true,
+    "text": "%41%2B%42,%43+%44,%45!!%46,%47!:%48",
+    "data": ["A+B", "C D", "E!F", "G:H"]
   },
   "non-implied-array": {
     "type": "fail",
