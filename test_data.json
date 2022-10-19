@@ -313,7 +313,7 @@
     "type": "load",
     "aqf": true,
     "text": "%28a%3ab%29",
-    "data": {"a": "b"}
+    "data": { "a": "b" }
   },
   "aqf-roundtrip-structural": {
     "aqf": true,
@@ -380,6 +380,26 @@
     "aqf": true,
     "text": "!e",
     "data": ""
+  },
+  "apos-mid": {
+    "type": "load",
+    "text": "a'b",
+    "data": "a'b"
+  },
+  "apos-end": {
+    "type": "load",
+    "text": "ab'",
+    "data": "ab'"
+  },
+  "apos-start": {
+    "type": "fail",
+    "text": "'ab"
+  },
+  "apos-start-aqf": {
+    "type": "load",
+    "aqf": true,
+    "text": "'ab",
+    "data": "'ab"
   },
   "non-implied-array": {
     "type": "fail",
