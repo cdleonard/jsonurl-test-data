@@ -284,6 +284,20 @@
     "text": "%41%2B%42,%43+%44,%45!!%46,%47!:%48",
     "data": ["A+B", "C D", "E!F", "G:H"]
   },
+  "aqf-empty-tail-implied-array": {
+    "aqf": true,
+    "implied_array": true,
+    "text": "e,!e",
+    "data": ["e", ""]
+  },
+  "aqf-empty-tail-implied-object": {
+    "aqf": true,
+    "implied_object": true,
+    "text": "e:!e",
+    "data": {
+      "e": ""
+    }
+  },
   "non-implied-array": {
     "type": "fail",
     "text": "a,b"
