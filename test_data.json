@@ -4,6 +4,29 @@
         "data": true
     },
     {
+        "text": "false",
+        "data": false
+    },
+    {
+        "text": "(a:(1,2),c:'3')",
+        "data": {
+            "a": [ 1, 2 ],
+            "c": "3"
+        }
+    },
+    {
+        "text": "((1,2),3)",
+        "data": [ [ 1, 2 ], 3 ]
+    },
+    {
+        "text": "(1,(2,3))",
+        "data": [ 1, [2, 3 ] ]
+    },
+    {
+        "text": "(null,'null',false,'false',true,'true',1,'1',1.2,'1.2','',aaa)",
+        "data": [ null, "null", false, "false", true, "true", 1, "1", 1.2, "1.2", "", "aaa" ]
+    },
+    {
         "type": "fail",
         "text": "a,b"
     }
