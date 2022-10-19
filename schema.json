@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "object",
+    "anyOf": [
+      {
+        "$comment": "exact match between text and data on both load and save",
+        "properties": {
+          "type": {
+            "enum": "roundtrip"
+          },
+          "text": {
+            "type": "string"
+          },
+          "data": {}
+        },
+        "additionalProperties": false,
+        "required": ["text", "data"]
+      },
+      {
+        "$comment": "text must parse into data",
+        "properties": {
+          "type": {
+            "const": "load"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["type", "text", "data"]
+      },
+      {
+        "$comment": "text must fail to parse",
+        "properties": {
+          "type": {
+            "const": "fail"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["type", "text"]
+      }
+    ]
+  }
+}

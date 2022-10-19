@@ -1,33 +1,54 @@
-[
-    {
-        "text": "true",
-        "data": true
-    },
-    {
-        "text": "false",
-        "data": false
-    },
-    {
-        "text": "(a:(1,2),c:'3')",
-        "data": {
-            "a": [ 1, 2 ],
-            "c": "3"
-        }
-    },
-    {
-        "text": "((1,2),3)",
-        "data": [ [ 1, 2 ], 3 ]
-    },
-    {
-        "text": "(1,(2,3))",
-        "data": [ 1, [2, 3 ] ]
-    },
-    {
-        "text": "(null,'null',false,'false',true,'true',1,'1',1.2,'1.2','',aaa)",
-        "data": [ null, "null", false, "false", true, "true", 1, "1", 1.2, "1.2", "", "aaa" ]
-    },
-    {
-        "type": "fail",
-        "text": "a,b"
+{
+  "$schema": "./schema.json",
+  "true": {
+    "text": "true",
+    "data": true
+  },
+  "false": {
+    "text": "false",
+    "data": false
+  },
+  "list": {
+    "text": "(a:(1,2),c:'3')",
+    "data": {
+      "a": [1, 2],
+      "c": "3"
     }
-]
+  },
+  "nested-list-left": {
+    "text": "((1,2),3)",
+    "data": [[1, 2], 3]
+  },
+  "nested-list-right": {
+    "text": "(1,(2,3))",
+    "data": [1, [2, 3]]
+  },
+  "array-with-escapes": {
+    "text": "(null,'null',false,'false',true,'true',1,'1',1.2,'1.2','',aaa)",
+    "data": [
+      null,
+      "null",
+      false,
+      "false",
+      true,
+      "true",
+      1,
+      "1",
+      1.2,
+      "1.2",
+      "",
+      "aaa"
+    ]
+  },
+  "load-escape": {
+    "type": "load",
+    "text": "(quote:a%27b)",
+    "data": {
+        "quote": "a'b"
+    }
+  },
+  "non-implied-array": {
+    "type": "fail",
+    "text": "a,b"
+  }
+}
