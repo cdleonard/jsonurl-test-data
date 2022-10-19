@@ -151,6 +151,88 @@
     "aqf": true,
     "text": "hi!e"
   },
+  "fail-implied-object-unterminated": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b,"
+  },
+  "fail-implied-object-unterminated-2": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b,c"
+  },
+  "fail-implied-object-unterminated-3": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b,d:"
+  },
+  "fail-implied-object-second-colon": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a:b:c"
+  },
+  "fail-implied-object-coma": {
+    "type": "fail",
+    "implied_object": true,
+    "text": "a,b"
+  },
+  "fail-implied-array-colon": {
+    "type": "fail",
+    "implied_array": true,
+    "text": "a:b"
+  },
+  "fail-array-colon": {
+    "type": "fail",
+    "text": "(c,a:b)"
+  },
+  "fail-array-unterminated": {
+    "type": "fail",
+    "text": "(c,a,b"
+  },
+  "fail-object-unterminated": {
+    "type": "fail",
+    "text": "(a:b"
+  },
+  "fail-object-colon": {
+    "type": "fail",
+    "text": "(a:b:c,d:e)"
+  },
+  "fail-object-novalue": {
+    "type": "fail",
+    "text": "(a:,b:c)"
+  },
+  "fail-object-unterminated-missing-colon": {
+    "type": "fail",
+    "text": "(a:b,c"
+  },
+  "fail-object-unterminated-missing-colon-comma": {
+    "type": "fail",
+    "text": "(a:b,c,"
+  },
+  "fail-just-open-paren": {
+    "type": "fail",
+    "text": "("
+  },
+  "fail-just-open-paren-2": {
+    "type": "fail",
+    "text": "(a,("
+  },
+  "single-element-list": {
+    "text": "(a)",
+    "data": ["a"]
+  },
+  "empty-object": {
+    "text": "()",
+    "data": {}
+  },
+  "fail-composite-one-value": {
+    "type": "fail",
+    "text": "('a'"
+  },
+  "fail-composite-one-value-open-paren": {
+    "type": "fail",
+    "text": "(a("
+  },
   "percent-decode": {
     "type": "load",
     "text": "(color:a%3Ab,equal:%3d,parens:%29%28)",
