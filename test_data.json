@@ -310,6 +310,36 @@
     "text": "!!,+,!(,!),!,,!:",
     "data": ["!", " ", "(", ")", ",", ":"]
   },
+  "aqf-equal": {
+    "aqf": true,
+    "text": "a%3Db",
+    "data": "a=b"
+  },
+  "aqf-percent-percent": {
+    "aqf": true,
+    "text": "a%25b",
+    "data": "a%b"
+  },
+  "aqf-ampersand": {
+    "aqf": true,
+    "text": "a%26b",
+    "data": "a&b"
+  },
+  "aqf-fail-equal": {
+    "aqf": true,
+    "type": "fail",
+    "text": "a=b"
+  },
+  "aqf-fail-percent": {
+    "aqf": true,
+    "type": "fail",
+    "text": "a%b"
+  },
+  "aqf-fail-ampersand": {
+    "aqf": true,
+    "type": "fail",
+    "text": "a&b"
+  },
   "non-implied-array": {
     "type": "fail",
     "text": "a,b"
