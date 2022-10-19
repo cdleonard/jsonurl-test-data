@@ -304,6 +304,17 @@
     "text": "%28a%2cb%29",
     "data": ["a", "b"]
   },
+  "aqf-percent-encode-structural-array-end-in-comma": {
+    "type": "fail",
+    "aqf": true,
+    "text": "%28a%2c"
+  },
+  "aqf-percent-encode-structural-object": {
+    "type": "load",
+    "aqf": true,
+    "text": "%28a%3ab%29",
+    "data": {"a": "b"}
+  },
   "aqf-roundtrip-structural": {
     "aqf": true,
     "implied_array": true,
