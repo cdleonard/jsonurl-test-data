@@ -120,6 +120,14 @@
     "type": "fail",
     "text": "b%"
   },
+  "fail-quote-unterminated": {
+    "type": "fail",
+    "text": "'aa"
+  },
+  "fail-quote-badchar": {
+    "type": "fail",
+    "text": "'a&b'"
+  },
   "fail-quote-percent-oneval": {
     "type": "fail",
     "text": "a%1"
